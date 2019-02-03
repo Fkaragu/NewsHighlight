@@ -11,5 +11,10 @@ json_obj = urllib.request.urlopen(url)
 data = json.load(json_obj)
 
 
-
-print(data)
+for item in data['articles']:
+	print(item['author'])
+	print(item['title'])
+	print(item['description'])
+	print(item['url'])
+	print(item['urlToImage'])
+	print(item['publishedAt'])
