@@ -1,0 +1,11 @@
+<div>
+         <ul>
+            {% for datas in data['articles']: %}
+                <p class="small"> By: {{datas['author']}} {{datas['publishedAt']}}</p>
+		<p> Title: {{datas['title']}} </p>
+		<p> {{datas['description']|truncate(150)}}</p>
+                	<a href="{{datas['url']}}&40">Read Articles</a>
+		<a href={{datas['url']}} target="_blank"><img src={{datas['urlToImage']}} alt="IMAGE LOADING..."></a>
+            {% endfor %}
+        </ul>
+</div>
