@@ -6,45 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>WithIt News Portal</title>
 
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
 </head>
 
 <body>
-  <div id="main-page">
-    <!-- navigation section -->
-    {% block navbar %}
-    {% include 'navbar.html' %}
-    {% endblock %}
-    <!-- end navigation section -->
-
-    <!-- sources section -->
-    <div id="main-section">
-      <section class="sources">
-        <div class="news-banners">
-          <div class="row no-gutters">
-            {% block source %}
-            {% include 'source.html' %}
-            {% endblock %}
-          </div>
-        </div>
-
-      </section>
-      <!-- end of sources section -->
-    </div>
-    <!-- end of main section -->
+<div class = "container-fluid">
+<div class='row'>
+  <div class='col-md-4 stru'>
+  <h2>News Sources</h2>
+    <ul>
+      {% for news_sources in sources %}
+      <p>{{news_sources.name}}</p>
+      {% endfor %}
+    </ul>
   </div>
-  <!-- end main age -->
+  <div class='col-md-8'>
+  <p>test</p>
+  </div>
+  </div>
+  </div>
 </body>
-
-
-
-
-
-
-
-
-
 
 </html>

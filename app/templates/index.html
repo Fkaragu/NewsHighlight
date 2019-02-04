@@ -1,35 +1,17 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>WithIt News Portal</title>
-
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
-  <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
-</head>
-
-<body>
-<div class = "container-fluid">
-<div class='row'>
-  <div class='col-md-4 stru'>
-  <h2>News Sources</h2>
-    <ul>
-      {% for news_sources in sources %}
-      <p>{{news_sources.name}}</p>
-      {% endfor %}
-    </ul>
+{% block content %}
+<hr>
+<div class="container">
+  <div class="col-md-12">
+    <h1 class="text-center" id="fntcol">
+      <center> WELCOME TO NEWS HIGHLIGHTS </center>
+    </h1>
   </div>
-  <div class='col-md-8'>
-  <p>test</p>
-  </div>
-  </div>
-  </div>
-</body>
 
-</html>
+  <hr>
+</div>
+
+<div class="container-img">
+  <center><img src="{{ url_for('static', filename='images/news.jpg') }}" alt=""></center>
+</div>
+
+{% endblock %}
