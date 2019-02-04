@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>WithIt News Portal</title>
 
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
@@ -13,12 +15,20 @@
 </head>
 
 <body>
-  <div class='stru'>
+<div class = "container-fluid">
+<div class='row'>
+  <div class='col-md-4 stru'>
+  <h2>News Sources</h2>
     <ul>
       {% for news_sources in sources %}
       <p>{{news_sources.name}}</p>
       {% endfor %}
     </ul>
+  </div>
+  <div class='col-md-8'>
+  <p>test</p>
+  </div>
+  </div>
   </div>
 </body>
 
