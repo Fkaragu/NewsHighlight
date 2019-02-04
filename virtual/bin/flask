@@ -1,4 +1,5 @@
-#!/home/francs/Desktop/core/back/watchlist/virtual/bin/python
+#!/home/francs/Desktop/core/back/NewApi/virtual/bin/python3.6
+
 # -*- coding: utf-8 -*-
 import re
 import sys
