@@ -5,10 +5,10 @@ import json
 
 news_api ='ec8d248df3204bd999e2821ee4bbee57'
 
-url = 'https://newsapi.org/v2/top-headlines?sources=cnn&apiKey='+ news_api
-json_obj = urllib.request.urlopen(url)
-
-data = json.load(json_obj)
+#CNN
+url_cnn = 'https://newsapi.org/v2/top-headlines?sources=cnn&apiKey='+ news_api
+json_obj_cnn = urllib.request.urlopen(url_cnn)
+data_cnn = json.load(json_obj_cnn)
 
 @app.route('/')
 def index():
@@ -16,4 +16,4 @@ def index():
     '''
     View root page function that returns the index page and its data
     '''
-    return render_template('index.html', data = data)
+    return render_template('index.html', data_cnn = data_cnn)
