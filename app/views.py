@@ -10,6 +10,11 @@ url_cnn = 'https://newsapi.org/v2/top-headlines?sources=cnn&apiKey='+ news_api
 json_obj_cnn = urllib.request.urlopen(url_cnn)
 data_cnn = json.load(json_obj_cnn)
 
+#AL-JAZEERA
+url_ALJ = 'https://newsapi.org/v2/top-headlines?sources=al-jazeera-english&apiKey='+ news_api
+json_obj_ALJ = urllib.request.urlopen(url_ALJ)
+data_ALJ = json.load(json_obj_ALJ)
+
 @app.route('/')
 def index():
 
