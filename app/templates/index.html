@@ -1,1 +1,5 @@
-{% extends 'base.html'%}
+<ul>
+  {% for news_sources in sources %}
+  <p>{{news_sources.name}}</p>
+  {% endfor %}
+</ul>
