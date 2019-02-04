@@ -21,7 +21,15 @@ def index():
     '''
     View root page function that returns the index page and its data
     '''
-    return render_template('index.html', data_cnn = data_cnn)
+    return render_template('index.html')
+
+@app.route('/cnn')
+def cnn():
+
+    '''
+    View root page function that returns the index page and its data
+    '''
+    return render_template('cnn.html', data_cnn = data_cnn)
 
 @app.route('/aljazeera')
 def aljazeera():
