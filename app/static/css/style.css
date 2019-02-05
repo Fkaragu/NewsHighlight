@@ -1,8 +1,9 @@
 .stru{
   border: 1px solid grey;
-  color: red;
-  margin: 10px;
 }
 #fntcol{
 color: blue;
+}
+.fnt {
+  color: white;
 }
