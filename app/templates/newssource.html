@@ -1,10 +1,10 @@
 <html>
 
 <head>
-<link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
-<link href="{{url_for('static',filename='css/bootstrap.css')}}" rel="stylesheet">
-<link href="{{url_for('static',filename='css/bootstrap.css.map')}}" rel="stylesheet">
-<link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='css/bootstrap.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='css/bootstrap.css.map')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
 </head>
 
 </head>
@@ -16,14 +16,14 @@
         {% for news_sources in sources %}
         <p><strong>{{news_sources.name}}</strong></p>
         <p>{{news_sources.description}}</p>
-        <span class="label label-primary"><a class ='fnt' href={{news_sources.url}} target="iframe_a">View more details..</a></span>
+        <span class="label label-primary"><a class='fnt' href={{news_sources.url}} target="iframe_a">View more details..</a></span>
         <br>
         {% endfor %}
 
       </ul>
     </div>
     <div class='col-md-8'>
-      <iframe height="100%" width="100%"  name="iframe_a"></iframe>
+      <iframe height="100%" width="100%" name="iframe_a"></iframe>
     </div>
   </div>
 
